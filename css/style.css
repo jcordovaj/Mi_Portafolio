@@ -1,8 +1,6 @@
 /*
-Author URI: http://webthemez.com/
-Note: 
-Licence under Creative Commons Attribution 3.0 
--------------------------------------------------------*/
+
+*/
 
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
@@ -43,7 +41,6 @@ a, a:hover, a:active {
     width: 0;
     height: 0;
 }
-
 .clearfix:after {
     clear: both;
 }
