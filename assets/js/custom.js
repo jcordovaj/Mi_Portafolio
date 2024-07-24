@@ -1,9 +1,5 @@
 /*
-Author URI: http://webthemez.com/
-Note: 
-Licence under Creative Commons Attribution 3.0 
-Do not remove the back-link in this web template 
--------------------------------------------------------*/
+*/
 
 $(window).load(function() {
     jQuery('#all').click();
@@ -19,11 +15,11 @@ $(document).ready(function() {
     });
 	
     function resizeText() {
-        var preferredWidth = 767;
-        var displayWidth = window.innerWidth;
-        var percentage = displayWidth / preferredWidth;
-        var fontsizetitle = 25;
-        var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+        let preferredWidth = 767;
+        let displayWidth = window.innerWidth;
+        let percentage = displayWidth / preferredWidth;
+        let fontsizetitle = 25;
+        let newFontSizeTitle = Math.floor(fontsizetitle * percentage);
         $(".divclass").css("font-size", newFontSizeTitle)
     }
     if ($('#main-nav ul li:first-child').hasClass('active')) {
@@ -55,7 +51,7 @@ $(document).ready(function() {
         }
     });
 
-    var container = $('#portfolio_wrapper');
+    let container = $('#portfolio_wrapper');
 
 
     container.isotope({
@@ -70,7 +66,7 @@ $(document).ready(function() {
     $('#filters a').click(function() {
         $('#filters a').removeClass('active');
         $(this).addClass('active');
-        var selector = $(this).attr('data-filter');
+        let selector = $(this).attr('data-filter');
         container.isotope({
             filter: selector
         });
@@ -79,7 +75,7 @@ $(document).ready(function() {
     });
 
     function splitColumns() {
-        var winWidth = $(window).width(),
+        let winWidth = $(window).width(),
             columnNumb = 1;
 
 
@@ -97,7 +93,7 @@ $(document).ready(function() {
     }
 	
     function setColumns() {
-        var winWidth = $(window).width(),
+        let winWidth = $(window).width(),
             columnNumb = splitColumns(),
             postWidth = Math.floor(winWidth / columnNumb);
 
@@ -131,7 +127,7 @@ wow = new WOW({
 });
 wow.init();
 document.getElementById('').onclick = function() {
-    var section = document.createElement('section');
+    let section = document.createElement('section');
     section.className = 'wow fadeInDown';
     section.className = 'wow shake';
     section.className = 'wow zoomIn';
