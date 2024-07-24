@@ -126,6 +126,15 @@ wow = new WOW({
     offset: 100
 });
 wow.init();
+
+document.getElementById('myElement').onclick = function() {
+  let section = document.createElement('section');
+  section.className = 'wow fadeInDown wow shake wow zoomIn wow lightSpeedIn';
+  this.parentNode.insertBefore(section, this);
+};
+
+/*
+
 document.getElementById('').onclick = function() {
     let section = document.createElement('section');
     section.className = 'wow fadeInDown';
@@ -134,3 +143,4 @@ document.getElementById('').onclick = function() {
     section.className = 'wow lightSpeedIn';
     this.parentNode.insertBefore(section, this);
 };
+*/
