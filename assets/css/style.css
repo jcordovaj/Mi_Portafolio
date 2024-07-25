@@ -45,7 +45,9 @@ a, a:hover, a:active {
     clear: both;
 }
 
+
 /* Common style */
+
 .grid figure {
 	position: relative;
 	float: left;
@@ -416,8 +418,9 @@ p {
 
 .top_cont_outer {
     background: #ED5441;
-    position: relative; 
-    background: url('../img/main2.jpg') no-repeat;
+    position: relative;
+    background: url('imgs/photo-1.jpg') no-repeat;
+    /*background: url('../img/main2.jpg') no-repeat;*/
 	background-size: cover; 
 }
 
@@ -530,10 +533,6 @@ div#main-nav {
   float: initial !important;
 }
 
-
-
-
-
 /* Services
 ---------------------------------*/
 
@@ -564,8 +563,6 @@ div#main-nav {
     height: 85px;
     margin: 0px auto 25px; 
 }
-
- 
 
 .service_icon span {
     background: transparent; 
@@ -604,12 +601,10 @@ color:#fff;
     color: #fff;
     margin: 0 0 35px 0; 
 }
-	
 
 
 /* Latest Work
 ---------------------------------*/
-
 
 #work_outer {
     background: #f9f9f9;
@@ -698,7 +693,6 @@ a.contact_btn:hover {
 
 /* Portfolio
 ---------------------------------*/
-
 
 #Portfolio {
     padding: 60px 0px;
@@ -794,8 +788,6 @@ img {
 /* Happy Clients
 ---------------------------------*/
 
-
-
 #clients {
     padding: 60px 0px;
 }
@@ -847,9 +839,9 @@ img {
     color: #888888;
 }
 
+
 /* Clients
 ---------------------------------*/
-
 
 .client_logos {
     background: #11D25D;
@@ -881,6 +873,7 @@ img {
 .page_section.team h6 {
     margin-bottom: 40px;
 }
+
 
 /* About Us
 --------------------------- */
@@ -1097,8 +1090,10 @@ transition: all .3s;
     background: #fff;
 }
 
+
 /* Contact
 ---------------------------------*/
+
 .page_section.contact {
     padding: 90px 0 100px;
 }
@@ -1302,6 +1297,7 @@ transition: all .3s;
     color: #222;
 }
 
+
 /* Footer
 ---------------------------------*/
 
@@ -1390,8 +1386,6 @@ transition: all .3s;
 /*new_profolio*/
 
 
-
-	
 /* Portfolio */	
 	
 .container.portfolio_title {
@@ -1401,7 +1395,6 @@ transition: all .3s;
 #portfolio {
     padding: 60px 0 40px;
 }
-
 
 
 /* Portfolio Filters */	
@@ -1429,7 +1422,6 @@ transition: all .3s;
     background: none repeat scroll 0 0 #f7f7f7;
     border-radius: 4px;
     display: inline-block;
-    
     font-size: 12px;
     line-height: 20px;
     margin-bottom: 5px;
@@ -1578,7 +1570,6 @@ padding:80px 0 60px;
     color: #fff;
     text-transform: uppercase;
     margin-top: 25px;
-    
     opacity: 0;
     font-size: 18px;
     transition: all 0.2s ease 0s;
@@ -1646,10 +1637,8 @@ padding:80px 0 60px;
     -o-transition: opacity .3s .2s, margin-top .3s .2s;
     transition: opacity .3s .2s, margin-top .3s .2s;
 }
-	
-	
-	
-	
+
+
 /* Portfolio Isotope Transitions */	
 
 .isotope, .isotope .isotope-item {
@@ -1685,10 +1674,7 @@ padding:80px 0 60px;
 }
 
 
-
 /* Portfolio Expander */	
-
-
 
 #project_container {
     display: none;
@@ -1759,9 +1745,8 @@ padding:80px 0 60px;
     padding-bottom: 40px;
 }
 
-	
+
 /* Portfolio*/	
-	
 	
 .project-image-slider .bx-wrapper .bx-next {
     background: url("images/project_slider_right.png") no-repeat;
@@ -1822,7 +1807,6 @@ padding:80px 0 60px;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-	
 	
 	
 /* Portfolio FullScreen Expander */			
@@ -1970,6 +1954,7 @@ div.mc-image {
 /*-------------------
 -----News Styles-----
 ---------------------*/    
+
 .timeline{
     position:relative;
     margin-bottom:100px;
@@ -2250,10 +2235,12 @@ div.mc-image {
 .news-content .news-media.gallery{
     box-shadow:4px 4px 0 #bbb,8px 8px 0 #ddd;
 }
-                               
+
+
 /*
    Media Queries
 --------------------------- */
+
 @media (min-width: 768px) and (max-width: 1200px) {
 
 .aboutUs-container {
