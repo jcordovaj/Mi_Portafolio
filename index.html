@@ -81,10 +81,9 @@
                                         <div class="date">
                                             <p>Oct</p>
                                         </div>
-                                        <h2 class="news-title">Facebook</h2>
+                                        <h2 class="news-title">Grupo Telefonica</h2>
                                         <span>UI/UX Designer</span>
-                                        <p>October 2013 – November 2013 (2 months)Menlo Park, CA, United States of
-                                            America or one who avoids a pain that produces no resultant pleasure…</p>
+                                        <p>Febrero 1999 – Abril 2001, Santiago, Chile, Telecomunicaciones, Call Centers, SVA</p>
                                         <a class="read-more" href="#">Read More</a>
                                     </div>
                                 </div>
@@ -96,9 +95,9 @@
                                 <div class="col-sm-6 news-item">
                                     <div class="news-content">
                                         <div class="date">
-                                            <p>Aug</p>
+                                            <p>Mayo</p>
                                         </div>
-                                        <h2 class="news-title">Google</h2>
+                                        <h2 class="news-title">Entel</h2>
                                         <span>UI/UX Designer</span>
                                         <p>October 2013 – November 2013 (2 months)Menlo Park, CA, United States of
                                             America or one who avoids a pain that produces no resultant pleasure…</p>
@@ -237,6 +236,40 @@
 
         <section id="contacto" class="row">
             <h2 class="col-12 mb-4">Contacto</h2>
+				<div class="container mt-5">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required maxlength="50">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" required maxlength="50">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono Celular</label>
+                <input type="text" class="form-control" id="telefono" required pattern="\+\d{2} \d \d{8}">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" required maxlength="1000"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tipoRequerimiento">Tipo de Requerimiento</label>
+                <select class="form-control" id="tipoRequerimiento" required>
+                    <option>Informativo</option>
+                    <option>Reclamo</option>
+                    <option>Cotización</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="correo">Dirección de Correo</label>
+                <input type="email" class="form-control" id="correo" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
         </section>
     </main>
     <footer class="container-fluid bg-dark text-white py-15">
