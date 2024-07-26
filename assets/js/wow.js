@@ -1,3 +1,6 @@
+//Ayuda WOW: Es una librería para dar efectos animados a elementos como imágenes, textos, 
+//formularios, etc., al momento de hacer scroll; funciona conjuntamente con animate.css 
+
 (function() {
   var MutationObserver, Util, WeakMap,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },

@@ -134,7 +134,6 @@ document.getElementById('myElement').onclick = function() {
 };
 
 /*
-
 document.getElementById('').onclick = function() {
     let section = document.createElement('section');
     section.className = 'wow fadeInDown';
