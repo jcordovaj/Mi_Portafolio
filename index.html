@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jota Cordova - Portafolio</title>
     <!--ícono de la pestaña en el navegador-->
     <link rel="icon" href="assets/imgs/favicon.png" type="image/png">
-    
+
     <!--Por buena práctica, se cargan primero las librerías externas como Boostrap o Animate-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
     <!--Segundo, se cargan estilos generales como font-awesome, style.css-->
     <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css">
-    
+
     <!--Tercero, se cargan estilos propios definidos en style.css-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
     <!--Cuarto, se cargan los scripts para evitar problemas de dependencias-->
-    
+
     <!--Función detecta(): Verifica el lenguaje del entorno y, por defecto muestra página-->
     <!--en español, si detecta que es inglés, muestra una versión en inglés, en otro caso-->
     <!--mostrará la página en español, por ejemplo, si el idioma del navegador es en "Chino"-->
@@ -63,27 +65,35 @@
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
-            <div class="navbar-header">
-                <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a href="#" class="navbar-brand scroll-top logo"><b>Me..</b></a> </div>
-            <!--/.navbar-header-->
-            <div id="main-nav" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav" id="mainNav">
-                <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                <li><a href="#skills" class="scroll-link">Skills</a></li>
-                <li><a href="#experience" class="scroll-link">Experience</a></li>
-                <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
-                <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
-                </ul>
-            </div>
-            <!--/.navbar-collapse--> 
+                <!--Genera un constraste con el fondo al cambiar de sección-->
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#main-nav"> 
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top logo"><b>Valle Nevado - Chile</b></a>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="mainNav">
+                        <li class="active"><a href="#home" class="scroll-link">Home</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
+                        <li><a href="#skills" class="scroll-link">Skills</a></li>
+                        <li><a href="#experience" class="scroll-link">Experience</a></li>
+                        <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
+                        <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
             </nav>
-            <!--/.navbar--> 
+            <!--/.navbar-->
         </div>
-        <!--/.container--> 
-        </header>
-        <!--/.header-->                
+        <!--/.container-->
+    </header>
+    <!--/.header-->
 
     <main class="container py-5">
         <section id="habilidades" class="row">
@@ -115,12 +125,13 @@
                                 <a class="read-more" href="#">Leer Más</a>
                             </div>
                         </div>
-        
+
                         <div class="col-sm-6 news-item right">
                             <div class="news-content">
                                 <h2 class="news-title">Entel</h2>
                                 <span>IT Manager</span>
-                                <p>Mayo 2001 – Agosto 2005 Santiago, Chile, Telecomunicaciones, Datacenters, Integración</p>
+                                <p>Mayo 2001 – Agosto 2005 Santiago, Chile, Telecomunicaciones, Datacenters, Integración
+                                </p>
                                 <a class="read-more" href="#">Leer Más</a>
                             </div>
                         </div>
@@ -135,58 +146,63 @@
                                 <a class="read-more" href="#">Leer Más</a>
                             </div>
                         </div>
-        
+
                         <div class="col-sm-6 news-item right">
                             <div class="news-content">
                                 <h2 class="news-title">Global Solutions</h2>
                                 <span>UI/UX Designer</span>
-                                <p>Septiembre 2007 – Diciembre 2014 , Santiago, Chile, Ciberseguridad, auditoría tecnológica</p>
+                                <p>Septiembre 2007 – Diciembre 2014 , Santiago, Chile, Ciberseguridad, auditoría
+                                    tecnológica</p>
                                 <a class="read-more" href="#">Leer Más</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-sm-6 news-item">
-                            <div class="news-content">
-                                <h2 class="news-title">MobileTec</h2>
-                                <span>UI Designer</span>
-                                <p>Diciembre 2014 – Julio 2017 Medellín, Colombia, Telecomunicaciones, Automatización de la Seguridad Pública.</p>
-                                <a class="read-more" href="#">Read More</a>
+                        <div class="row">
+                            <div class="col-sm-6 news-item">
+                                <div class="news-content">
+                                    <h2 class="news-title">MobileTec</h2>
+                                    <span>UI Designer</span>
+                                    <p>Diciembre 2014 – Julio 2017 Medellín, Colombia, Telecomunicaciones,
+                                        Automatización de la Seguridad Pública.</p>
+                                    <a class="read-more" href="#">Read More</a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 news-item right">
+                                <div class="news-content">
+                                    <h2 class="news-title">Two Fun Two Me</h2>
+                                    <span>Director de Tecnología y Operaciones - Centroamérica</span>
+                                    <p>Noviembre 2017 – Octubre 2018 Santiago, Chile, Servicios de Valor Agregado para
+                                        Telcos</p>
+                                    <a class="read-more" href="#">Leer más</a>
+                                </div>
                             </div>
                         </div>
-        
-                        <div class="col-sm-6 news-item right">
-                            <div class="news-content">
-                                <h2 class="news-title">Two Fun Two Me</h2>
-                                <span>Director de Tecnología y Operaciones - Centroamérica</span>
-                                <p>Noviembre 2017 – Octubre 2018 Santiago, Chile, Servicios de Valor Agregado para Telcos</p>
-                                <a class="read-more" href="#">Leer más</a>
+
+                        <div class="row">
+                            <div class="col-sm-6 news-item">
+                                <div class="news-content">
+                                    <h2 class="news-title">S&OPS Latam</h2>
+                                    <span>Director</span>
+                                    <p>Octubre 2018 – Noviembre 2023 Santiago, Chile. Projects in crisis interventor.
+                                    </p>
+                                    <a class="read-more" href="#">Leer más</a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 news-item right">
+                                <div class="news-content">
+                                    <h2 class="news-title">SRT</h2>
+                                    <span>Consultor Latam - Centroamérica</span>
+                                    <p>Marzo 2024 – Presente Santiago, Chile, Ciencia de Datos, RPA, Operaciones
+                                        cognitivas</p>
+                                    <a class="read-more" href="#">Leer más</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="row">
-                        <div class="col-sm-6 news-item">
-                            <div class="news-content">
-                                <h2 class="news-title">S&OPS Latam</h2>
-                                <span>Director</span>
-                                <p>Octubre 2018 – Noviembre 2023 Santiago, Chile. Projects in crisis interventor.</p>
-                                <a class="read-more" href="#">Leer más</a>
-                            </div>
-                        </div>
-                    
-                        <div class="col-sm-6 news-item right">
-                            <div class="news-content">
-                                <h2 class="news-title">SRT</h2>
-                                <span>Consultor Latam - Centroamérica</span>
-                                <p>Marzo 2024 –  Presente Santiago, Chile, Ciencia de Datos, RPA, Operaciones cognitivas</p>
-                                <a class="read-more" href="#">Leer más</a>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-            </section>
-        
+        </section>
+
         <section id="contacto" class="row">
             <h2 class="col-12 mb-4">Contacto</h2>
             <div class="container mt-5">
@@ -217,14 +233,15 @@
                     </div>
                     <div class="form-group">
                         <label for="correo">Dirección de Correo</label>
-                        <input type="email" class="form-control" id="correo" required>
+                        <input type="email" class="form-control" id="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+                        
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </section>
     </main>
-    
+
     <footer class="container-fluid bg-dark text-white py-15">
         <div class="row">
             <div class="col-12 text-center">
@@ -232,8 +249,8 @@
             </div>
         </div>
     </footer>
-    
-    <script src="assets/js/detecta.js"></script>    <!--Llama función que detecta lenguaje y carga página esp o ing-->
+
+    <script src="assets/js/detecta.js"></script> <!--Llama función que detecta lenguaje y carga página esp o ing-->
     <!--<script src="assets/js/validaform.js"></script> Llama función que valida info del formulario-->
     <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -247,4 +264,5 @@
     <script type="text/javascript" src="assets/js/respond-1.1.0.min.js"></script>
     <!--window.onload = detecta;-->
 </body>
+
 </html>
