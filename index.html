@@ -14,24 +14,25 @@
     <link rel="stylesheet" href="assets/css/animate.css" type="text/css">
     <link rel="stylesheet" href="assets/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
     
-    <!--Segundo, se cargan estilos generales como font-awesome, style.css)-->
+    <!--Segundo, se cargan estilos generales como font-awesome, style.css-->
     <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     
-    <!--Tercero, se cargan los scripts para evitar problemas de dependencias-->
+    <!--Tercero, se cargan estilos generales como font-awesome, style.css-->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <!--Cuarto, se cargan los scripts para evitar problemas de dependencias-->
     
     <!--Función detecta(): Verifica el lenguaje del entorno y, por defecto muestra página-->
-    <!--en español, si detecta inglés, muestra la versión en inglés, en otro caso, muestra-->
-    <!--página en español, por ejemplo, si el idioma del navegador es en "Chino"-->
+    <!--en español, si detecta que es inglés, muestra una versión en inglés, en otro caso-->
+    <!--mostrará la página en español, por ejemplo, si el idioma del navegador es en "Chino"-->
     <script>document.addEventListener("DOMContentLoaded", function() {
           detecta();
         });
     </script>
 
 </head>
-
 <!--Estructura del encabezado-->
-<header class="container-fluid bg-black text-white py-15">
+<!--<header class="container-fluid bg-black text-white py-15">
     <div class="row">
         <div class="col-12 text-end">
             <a href="index_en.html" class="btn btn-sm btn-light" id="english-link">
@@ -40,14 +41,13 @@
         </div>
     </div>
 </header>
-
 <script>
     // Detectar lenguaje del browser, por defecto, muestra la página en español
     const browserLang = navigator.language || navigator.userLanguage;
 
     // Verifica si el lenguaje es inglés  página es Check if the language is English
     const isEnglish = browserLang.toLowerCase().includes('en');
-</script>
+</script>-->
 
 <body>
 
