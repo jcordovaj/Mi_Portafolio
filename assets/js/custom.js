@@ -14,6 +14,13 @@ $(document).ready(function() {
 
     });
 	
+// Inserto BADGES - Efecto de desplazamiento suave al hacer clic en las flechas (opcional)
+//$('.badges-container').on('click', '.badge', function() {
+//    $(this).parent().animate({
+//        scrollLeft: $(this).offset().left - $(this).parent().offset().left
+//    }, 500);
+//});
+
     function resizeText() {
         let preferredWidth = 767;
         let displayWidth = window.innerWidth;
