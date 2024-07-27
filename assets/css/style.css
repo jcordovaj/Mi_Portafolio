@@ -2383,4 +2383,48 @@ width: 99%;
 .read_more2{
 display:none;
 }
+
+
+/*
+   Carrusel Badges
+--------------------------- */
+.badges-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.badge {
+    flex: 0 0 auto;
+    width: 200px;           /* Ajusta el ancho según tus necesidades */
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+.badge img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.badge:hover img {
+    transform: scale(1.1);
+}
+
+.badge-info {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.badge:hover .badge-info {
+    opacity: 1;
+}
 }
