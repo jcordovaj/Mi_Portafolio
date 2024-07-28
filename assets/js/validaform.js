@@ -41,10 +41,10 @@ $(document).ready(function () {
                 data: JSON.stringify(formData),
                 contentType: 'application/json',
                 success: function (response) {
-                    alert('Data submitted successfully');
+                    alert('Correo enviado correctamente');
                 },
                 error: function (error) {
-                    alert('An error occurred');
+                    alert('Ha ocurrido un error, vuelva a intentar');
                 }
             });
         }
