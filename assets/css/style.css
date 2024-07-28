@@ -60,6 +60,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #727272;
 }
 
+/*
+ * Mkt round (test, adaptando codigo SVG)
+ */
+
+.rounded-circle {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+  }
 
 .bd-placeholder-img {
     font-size: 1.125rem;
