@@ -8,14 +8,10 @@
 
 /* Reset
 ---------------------------------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", "Signika", "Georgia", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     text-align: left;
+    margin: 10px;
 }
 
 ul {
@@ -30,9 +26,7 @@ img {
     max-width: 100%;
 }
 
-a,
-a:hover,
-a:active {
+a, a:hover, a:active {
     outline: 0px !important;
     text-decoration: none;
 }
@@ -438,6 +432,7 @@ h3 {
     color: #222222;
     font-size: 18px;
     margin: 0 0 5px 0;
+    text-align: center;
 }
 
 h6 {
@@ -2706,7 +2701,7 @@ div.mc-image {
     }
 
     /*
-   Carrusel Badges
+        Badges
 --------------------------- */
     .badges-container {
         display: flex;
@@ -2717,8 +2712,7 @@ div.mc-image {
 
     .badge {
         flex: 0 0 auto;
-        width: 200px;
-        /* Ajusta el ancho según tus necesidades */
+        width: 100px;
         text-align: center;
         margin: 10px;
         position: relative;
@@ -2727,6 +2721,7 @@ div.mc-image {
     .badge img {
         width: 100%;
         transition: transform 0.3s ease-in-out;
+        position: relative;
     }
 
     .badge:hover img {
@@ -2748,4 +2743,5 @@ div.mc-image {
     .badge:hover .badge-info {
         opacity: 1;
     }
+    
 }
