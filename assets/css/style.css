@@ -190,6 +190,8 @@ a, a:hover, a:active {
     border-radius: 50%;
     width: 140px;
     height: 140px;
+    margin: 10px;
+    align-self: center;
 }
 
 .bd-placeholder-img {
@@ -2172,7 +2174,6 @@ div.mc-image {
     padding: 10px 20px;
     text-indent: 0px;
     border-radius: 0px;
-    /* Standard property for rounded corners */
     z-index: 1000;
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=1);
@@ -2743,5 +2744,8 @@ div.mc-image {
     .badge:hover .badge-info {
         opacity: 1;
     }
-    
+
+    .container {
+        margin: 10px;
+    }
 }
