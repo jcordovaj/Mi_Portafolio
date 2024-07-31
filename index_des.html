@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jota Cordova - Portafolio</title>
+    <!--ícono de la pestaña en el navegador-->
+    <link rel="icon" href="assets/imgs/favicon.png" type="image/png">
+
+    <!--Por buena práctica, se cargan primero las librerías externas como Bootstrap o Animate-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+            crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/js/fancybox/jquery.fancybox.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" type="text/css" media="screen">
+
+    <!--Segundo, se cargan estilos generales como font-awesome, style.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css">
+
+    <!--Tercero, se cargan estilos propios definidos en style.css-->
+    <link rel="stylesheet" href="assets/css/style_dev.css" type="text/css">
+
+    <!--Cuarto, se cargan los scripts para evitar problemas de dependencias-->
+    <script>
+        $( function() {
+          $( "#dialog" ).dialog();
+        } );
+    </script>
+    <!--Función detecta(): Verifica el lenguaje del entorno y, por defecto muestra página-->
+    <!--en español, si detecta que es inglés, muestra una versión en inglés, en otro caso-->
+    <!--mostrará la página en español, por ejemplo, si el idioma del navegador es en "Chino"-->
+    <!--<script>document.addEventListener("DOMContentLoaded", function() {
+          detecta();
+        });
+    </script>-->
+
+</head>
+<!--Estructura del encabezado-->
+<!--<header class="container-fluid bg-black text-white py-15">
+    <div class="row">
+        <div class="col-12 text-end">
+            <a href="index_en.html" class="btn btn-sm btn-light" id="english-link">
+                <img src="assets/imgs/usa-flag-round-512x512.png" alt="English Version" width="25" height="25">
+            </a>
+        </div>
+    </div>
+</header>
+<script>
+    // Detectar lenguaje del browser, por defecto, muestra la página en español
+    const browserLang = navigator.language || navigator.userLanguage;
+    // Verifica si el lenguaje es inglés  página es Check if the language is English
+    const isEnglish = browserLang.toLowerCase().includes('en');
+</script>-->
+
+<body>
+    <!-- Prueba menu 1
+    <header class="container-fluid bg-dark text-white py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4">Jota Cordova</h1>
+                <p class="lead">Breve descripción de ti mismo</p>
+            </div>
+        </div>
+    </header>
+                -->
+    
+    <!-- Prueba menu 2
+    <header class="header">
+        
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                Genera un constraste con el fondo al cambiar de sección
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top logo"><b>Valle Nevado - Chile</b></a>
+                </div>
+                /.navbar-header
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="mainNav">
+                        <li class="active"><a href="#home" class="scroll-link">Inicio</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">Brief</a></li>
+                        <li><a href="#skills" class="scroll-link">Credenciales</a></li>
+                        <li><a href="#experience" class="scroll-link">Experience</a></li>
+                        <li><a href="#portfolio" class="scroll-link">Portafolio</a></li>
+                        <li><a href="#contactUs" class="scroll-link">Contacto</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+        
+        </div>
+        
+    </header>
+    
+                        -->
+    
+
+
+
+
+    <!--Prueba switch de fondo light, dark-->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+    
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!--Fin prueba switch de fondo-->
+    <main class="container py-5">
+        <section id="habilidades" class="container">
+            <h2 class="col-12 mb-4">Credenciales</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100 text-center shadow-sm">
+                        <img src="./assets/imgs/BI_FoundProCert_BIFPC.png" class="card-img-top mx-auto w-25 h-30"
+                            alt="Badge 1">
+                        <div class="card-body">
+                            <!--<h2 class="card-title">Badge 1</h2>-->
+                            <p class="card-text">Certificación Business Intelligence Foundation</p>
+                            <a href="https://www.credly.com/badges/0410849e-e16d-42e9-8c98-4bb305980d33/public_url"
+                                target="_blank" class="btn btn-primary">Verificar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 text-center shadow-sm">
+                        <img src="./assets/imgs/Postman.png" class="card-img-top mx-auto w-25 h-30" style="width: 60px;"
+                            alt="Badge 2">
+                        <div class="card-body">
+                            <h3 class="card-title">Badge 2</h3>
+                            <p class="card-text">Certificación API Fundamentals Expert</p>
+                            <a href="https://api.badgr.io/public/assertions/spufydjkR1OMX9xqwunuAw" target="_blank"
+                                class="btn btn-primary">Verificar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 text-center shadow-sm">
+                        <img src="assets/imgs/ScrumFoundationProfessionalCertificationSFPC.png"
+                            class="card-img-top mx-auto w-25 h-30" alt="Badge 3">
+                        <div class="card-body">
+                            <h3 class="card-title">Badge 3</h3>
+                            <p class="card-text">Certificación SCRUM Foundation Professional</p>
+                            <a href="https://www.credly.com/badges/c55fe924-7a04-4988-a6c7-0baec33a8813/public_url"
+                                target="_blank" class="btn btn-primary">Verificar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 text-center shadow-sm">
+                        <img src="assets/imgs/British_YesterdayTodayandTomorrowC1.png"
+                            class="card-img-top mx-auto w-25 h-30" alt="Badge 4">
+                        <div class="card-body">
+                            <h3 class="card-title">Badge 4</h3>
+                            <p class="card-text">British Council Level C1 - Yesterday, today and tomorrow</p>
+                            <a href="https://credentials.englishonline.britishcouncil.org/12e2baa4-d493-4af4-9307-1e5e36c662a4"
+                                target="_blank" class="btn btn-primary">Verificar</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="proyectos" class="row row-cols-auto g-3">
+            <h2 class="col-12 mb-4">Proyectos</h2>
+            <div class="container marketing">
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="./assets/imgs/articulo-1.PNG" alt="Miniatura" class="rounded-circle">
+                        <h3>Primer artículo</h3>
+                        <p>Some representative placeholder content for the three columns of text below the carousel.
+                            This is the first column.</p>
+                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div>
+        
+                    <div class="col-lg-4">
+                        <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" alt="Miniatura" class="rounded-circle" width="140" height="140">
+                            <title>Placeholder</title>
+                        <h3>Heading</h3>
+                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
+                            second column.</p>
+                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div>
+        
+                    <div class="card-container">
+                        <div class="card">
+                            <!--<img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" alt="Imagen de ejemplo"
+                                class="card-img">-->
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" alt="Miniatura" class="rounded-circle" width="140" height="140">    
+                            <div class="card-body">
+                                <h5 class="card-title">Título de la tarjeta</h5>
+                                <p class="card-text">Descripción de la tarjeta</p>
+                                <button class="btn btn-primary">Ir al artículo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="articulos" class="row row-cols-auto g-3">
+            <h2 class="col-12 mb-4">Artículos</h2>
+            <main class="container">
+                <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+                    <div class="col-lg-6 px-0">
+                        <h1 class="display-4 ">Title of a longer featured blog post</h1>
+                        <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly
+                            and
+                            efficiently about what’s most interesting in this post’s contents.</p>
+                        <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                                <h3 class="mb-0">Featured post</h3>
+                                <div class="mb-1 text-body-secondary">Nov 12</div>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a
+                                    natural
+                                    lead-in to additional content.</p>
+                                <a href="https://www.linkedin.com/pulse/notes-successful-takeover-part-1-jota-cordova/?trackingId=Q7ZUfjd%2Bax0KSs5lW8LB1A%3D%3D"
+                                    class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                    <svg class="bi">
+                                        <use xlink:href="#chevron-right" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" width="200" height="250"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Miniatura</title>
+                                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                        fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Test-->
+                    <!--<div class="row mb-2">
+                        <div class="col-md-6">
+                            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">  
+                    
+                                <div class="col-auto d-none d-lg-block">
+                                    <img src="https://www.linkedin.com/pulse/notes-successful-takeover-part-1-jota-cordova/?trackingId=Q7ZUfjd%2Bax0KSs5lW8LB1A%3D%3D" alt="Article Thumbnail" class="img-fluid rounded" width="200"
+                                        height="250">
+                                </div>
+                                <div class="col p-4 d-flex flex-column position-static">
+                                    <strong class="d-inline-block mb-2 text-primary-emphasis">Gerencia de TIC</strong>  
+                    
+                                    <h3 class="mb-0">Toma de Control</h3>
+                                    <div class="mb-1 text-body-secondary">Nov-2022</div>
+                                    <p class="card-text mb-auto">Que hacer al tomar control de las operaciones de una nueva empresa.</p>
+                                    <a href="#" class="icon-link
+                                           gap-1 icon-link-hover stretched-link">
+                                        Continuar leyendo..
+                                        <svg class="bi">
+                                            <use xlink:href="https://www.linkedin.com/pulse/notes-successful-takeover-part-1-jota-cordova/?trackingId=Q7ZUfjd%2Bax0KSs5lW8LB1A%3D%3D" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+
+
+
+                    <!--Fin test-->
+                    <div class="col-md-6">
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                                <h3 class="mb-0">Post title</h3>
+                                <div class="mb-1 text-body-secondary">Nov 11</div>
+                                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in
+                                    to
+                                    additional
+                                    content.</p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                    <svg class="bi">
+                                        <use xlink:href="#chevron-right" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" width="200" height="250"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                        fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="hitos" class="row row-cols-auto g-3">
+            <h2 class="col-12 mb-4">Hitos</h2>
+            <div class="box">
+                <span class="item">
+                  <img src="./assets/imgs/articulo-1.PNG" width="64" height="45" alt="Dino Sammy">
+                </span>
+                <span class="item">
+                  <img src="/images/steampunk.svg" width="64" height="45" alt="Steampunk Sammy">
+                </span>
+                <span class="item">
+                  <img src="/images/skeleton.svg" width="64" height="45" alt="Skeleton Sammy">
+                </span>
+              </div>
+
+
+
+
+        </section>
+
+        <section id="experience" class="row row-cols-auto g-3">
+            <h2 class="col-12 mb-4">Experiencia</h2>
+            <div class="container">
+                <div class="timeline">
+                    <div class="row">
+                        <div class="col-sm-6 news-item">
+                            <div class="news-content">
+                                <h2 class="news-title">Grupo Telefonica</h2>
+                                <span>Product Manager</span>
+                                <p>Febrero 1999 – Abril 2001, Santiago, Chile, Telecomunicaciones, Call Centers, SVA</p>
+                                <a class="read-more" href="#">Leer Más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 news-item right">
+                            <div class="news-content">
+                                <h2 class="news-title">Entel</h2>
+                                <span>IT Manager</span>
+                                <p>Mayo 2001 – Agosto 2005 Santiago, Chile, Telecomunicaciones, Datacenters, Integración</p>
+                                <a class="read-more" href="#">Leer Más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 news-item">
+                            <div class="news-content">
+                                <h2 class="news-title">Indra Systems</h2>
+                                <span>Gerente Fábrica de Software</span>
+                                <p>agosto 2005 – Agosto 2007 Santiago, Chile, Desarrollo multiplataforma, SAP, APM</p>
+                                <a class="read-more" href="#">Leer Más</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 news-item right">
+                            <div class="news-content">
+                                <h2 class="news-title">Global Solutions</h2>
+                                <span>UI/UX Designer</span>
+                                <p>Septiembre 2007 – Diciembre 2014 , Santiago, Chile, Ciberseguridad, auditoría
+                                    tecnológica</p>
+                                <a class="read-more" href="#">Leer Más</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 news-item">
+                                <div class="news-content">
+                                    <h2 class="news-title">MobileTec</h2>
+                                    <span>UI Designer</span>
+                                    <p>Diciembre 2014 – Julio 2017 Medellín, Colombia, Telecomunicaciones,
+                                        Automatización de la Seguridad Pública.</p>
+                                    <a class="read-more" href="#">Read More</a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 news-item right">
+                                <div class="news-content">
+                                    <h2 class="news-title">Two Fun Two Me</h2>
+                                    <span>Director de Tecnología y Operaciones - Centroamérica</span>
+                                    <p>Noviembre 2017 – Octubre 2018 Santiago, Chile, Servicios de Valor Agregado para
+                                        Telcos</p>
+                                    <a class="read-more" href="#">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 news-item">
+                                <div class="news-content">
+                                    <h2 class="news-title">S&OPS Latam</h2>
+                                    <span>Director</span>
+                                    <p>Octubre 2018 – Noviembre 2023 Santiago, Chile. Projects in crisis interventor.
+                                    </p>
+                                    <a class="read-more" href="#">Leer más</a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 news-item right">
+                                <div class="news-content">
+                                    <h2 class="news-title">SRT</h2>
+                                    <span>Consultor Latam - Centroamérica</span>
+                                    <p>Marzo 2024 – Presente Santiago, Chile, Ciencia de Datos, RPA, Operaciones
+                                        cognitivas</p>
+                                    <a class="read-more" href="#">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!--<section id="contacto" class="row" >-->
+        <section id="contacto" class="row mt-5 mb-5">
+            <h2 class="col-12 mb-4">Contacto</h2>
+            <div class="container mt-5">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required placeholder="Nombre*" maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" required placeholder="Apellido*"required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono Celular</label>
+                        <input type="text" class="form-control" id="telefono" required placeholder="Ingrese un número celular de la forma +56 9 12345678*" required pattern="\+\d{2} \d \d{8}">
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoRequerimiento">Tipo de Requerimiento</label>
+                        <select class="form-control" id="tipoRequerimiento" required>
+                            <option>Necesito información</option>
+                            <option>Deseo hacer un reclamo</option>
+                            <option>Quiero cotizar sus servicios</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required placeholder="Su mensaje no debe exceder los 1000 caracteres*"required maxlength="1000"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Dirección de Correo</label>
+                        <input type="email" class="form-control" id="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid bg-dark text-white py-15">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>&copy; 2024 Jota Cordova</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-Wp6YV8QzClxHqAkbYLQRSzajWTHaBVvTqSewjEYHHTI=" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+    <!--<script src="assets/js/detecta.js"></script> Llama función que detecta lenguaje y carga página esp o ing
+    <script src="assets/js/validaform.js"></script> Llama función que valida info del formulario
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="assets/js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="assets/js/wow.js"></script>
+    <script type="text/javascript" src="assets/js/respond-1.1.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>-->
+    <!--window.onload = detecta;-->-->
+
+</body>
+
+</html>
