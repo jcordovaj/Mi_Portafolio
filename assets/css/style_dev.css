@@ -146,7 +146,23 @@ a, a:hover, a:active {
     color: #727272;
 }
 
+/* Clase Blog Adaptada
+---------------------------------*/
 
+/* Style the #check2 symbol for selected theme */
+.dropdown-item.active .bi.ms-auto {
+    display: block;   /* Show checkmark for selected theme */
+    color: #007bff; /* Example color for checkmark */
+}
+
+/* Define background colors for different themes */
+.light {
+    background-color: #f8f9fa;
+}
+
+.dark {
+    background-color: #343a40;
+}
 
 /* Clase Mkt Round Adaptada
 ---------------------------------*/
