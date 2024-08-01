@@ -1,4 +1,4 @@
-// Función que detecta el lenguaje del browser y de acuerdo a ello despliega
+// Función que detecta el lenguaje del browser y de acuerdo a ello
 // despliega la versión de la página en inglés o en español
 // English: Function which detect browser language, default to Spanish
 // *************************************************************************
