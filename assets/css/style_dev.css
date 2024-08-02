@@ -6,7 +6,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
-/* Reset
+/* Reset general de estilos
 ---------------------------------*/
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", "Signika", sans-serif;
@@ -16,25 +16,20 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     margin: 10px 
 }
-
 ul {
     list-style: none;
 }
-
 .figure {
     margin: 10px;
 }
-
 img {
     max-width: 100%;
     margin: 10px;
 }
-
 a, a:hover, a:active {
     outline: 0px !important;
     text-decoration: none;
 }
-
 .clear {
     clear: both;
     display: block;
@@ -43,7 +38,6 @@ a, a:hover, a:active {
     width: 0;
     height: 0;
 }
-
 .clearfix:before,
 .clearfix:after {
     content: '\0020';
@@ -53,55 +47,40 @@ a, a:hover, a:active {
     width: 0;
     height: 0;
 }
-
 .clearfix:after {
     clear: both;
 }
 
-/* Estilo general del body
---------------------------*/
-
-
-/* Clase Featurettes
+/* Clase: Featurettes
 ------------------------- */
-
 .featurette-divider {
     margin: 1rem 0; /* Space out the Bootstrap <hr> more */
   }
-  
 
-/* Clase Card Adaptada
+/* Clase: Card Adaptada
 ---------------------------------*/
-
 /*.card.text-center.border.border-primary.shadow-0.text-white {
     background-color: #ef850b;
   }
-  
   .mask {
     background-color: rgba(251, 251, 251, 0.15);
-  }
-*/
-
+  }*/
   .card-container.text-center.border.border-primary.shadow-0.text-white {
     background-color: #ef850b;
   }
-  
   .mask {
     background-color: rgba(251, 251, 251, 0.15);
   }
-
   .card-container {
     width: 200px; /* Ancho total de la tarjeta */
     height: 300px;
   }
-  
   .card {
     width: 100%;            /* Ocupa todo el ancho del contenedor */
     height: 100%;
     display: flex;          /* Utilizamos Flexbox para distribuir el contenido */
     flex-direction: column; /* Organizamos el contenido en columnas */
   }
-  
   .card-img {
     width: 100%;          /* Ocupa todo el ancho de la tarjeta */
     height: 100%;         /* Altura de la imagen */
@@ -110,10 +89,8 @@ a, a:hover, a:active {
     align-content: center;
   }
 
-
-/* Clase Blog Adaptada
+/* Clase: Blog Adaptada
 ---------------------------------*/
-
 .img-fluid.rounded {
     width: 200px;
     height: 250px;
@@ -140,7 +117,6 @@ a, a:hover, a:active {
         height: 250px;
     }
 }
-
 .blog-pagination {
     margin-bottom: 4rem;
 }
@@ -152,10 +128,9 @@ a, a:hover, a:active {
     color: #727272;
 }
 
-/* Clase Blog Adaptada
----------------------------------*/
-
-/* Style the #check2 symbol for selected theme */
+/* Clase: Switch para cambiar forndo
+   Style the #check2 symbol for selected theme
+------------------------------------------------*/
 .dropdown-item.active .bi.ms-auto {
     display: block;   /* Show checkmark for selected theme */
     color: #007bff; /* Example color for checkmark */
@@ -180,13 +155,14 @@ a, a:hover, a:active {
     margin-left: .75rem;
   }
 
+/* Clase: Rounded circle
+---------------------------------*/
 .container-rounded-circle {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.rounded-circle {
+.rounded-circle {           /*(imagen recortada)*/
     object-fit: cover;
     border-radius: 50%;
     width: 140px;
@@ -195,12 +171,13 @@ a, a:hover, a:active {
     align-self: center;
 }
 
+/* Clase: BD-placeholder
+---------------------------------*/
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
     user-select: none;
 }
-
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
