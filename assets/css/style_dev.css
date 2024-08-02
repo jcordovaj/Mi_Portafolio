@@ -9,7 +9,7 @@
 /* Reset
 ---------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", "Signika", "Georgia", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-family: "Raleway", "Signika", sans-serif;
     text-align: left;
     margin: 10px;
 }
@@ -118,18 +118,14 @@ a, a:hover, a:active {
     width: 200px;
     height: 250px;
     object-fit: cover;
-    
 }
-
 .blog-header-logo {
     font-family: "Raleway", "Georgia", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     font-size: 2.25rem;
 }
-
 .blog-header-logo:hover {
     text-decoration: none;
 }
-
 .flex-auto {
     flex: 0 0 auto;
     margin-bottom: 50px;
@@ -148,11 +144,9 @@ a, a:hover, a:active {
 .blog-pagination {
     margin-bottom: 4rem;
 }
-
 .blog-post {
     margin-bottom: 4rem;
 }
-
 .blog-post-meta {
     margin-bottom: 1.25rem;
     color: #727272;
@@ -166,26 +160,21 @@ a, a:hover, a:active {
     display: block;   /* Show checkmark for selected theme */
     color: #007bff; /* Example color for checkmark */
 }
-
 /* Define background colors for different themes */
 .light {
     background-color: #f8f9fa;
 }
-
 .dark {
     background-color: #343a40;
 }
 
 /* Clase Mkt Round Adaptada
 ---------------------------------*/
-
 /* Center align the text within the three columns below the carousel */
-
 .marketing .col-lg-4 {
     margin-bottom: 2.5rem;
     text-align: center;
   }
-
 .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
