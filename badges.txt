@@ -1,42 +1,64 @@
-1) LLL Lifelong Learning
-https://www.credly.com/badges/2561c8d2-7441-4d8a-a1fb-b69cff605785/public_url
-
-2) Pendo AI for Product Management
+1) Pendo AI for Product Management
 https://www.credly.com/badges/2daca28a-af52-4ad7-a618-5f76ee9a7314/public_url
+Habilidades en el análisis de productos y mejorar tu capacidad para crear productos exitosos
 
-3) Pendo Digital Adoption Certification
-https://www.credly.com/badges/7307ddf3-2ae9-4f6f-8ea1-8062a25f0752/public_url
-
-4) Business Intelligence Foundation Professional Certification - BIFPC™
-https://www.credly.com/badges/0410849e-e16d-42e9-8c98-4bb305980d33/public_url
-
-5) Lean Six Sigma White Belt Professional Certification - LSSWBPC
-https://www.credly.com/badges/9e6ffd8c-f0f2-4646-852f-6fc360ff688d/public_url
-
-6) Scrum Foundation Professional Certification - SFPC™
+2) Scrum Foundation Professional Certification - SFPC™
 https://www.credly.com/badges/c55fe924-7a04-4988-a6c7-0baec33a8813/public_url
+Entendimiento fundamental de los roles, eventos, artefactos y reglas que conforman Scrum
 
-7) Pendo Product Analytics Certification
+3) Postman API Fundamentals Expert
+https://api.badgr.io/public/assertions/spufydjkR1OMX9xqwunuAw?identity__email=jorge.cordovaj%40gmail.com
+conocimiento sólido de los fundamentos de Postman y de cómo trabajar con APIs
+
+4) Pendo Product Analytics Certification
 https://www.credly.com/badges/35e0cdb1-c3fd-47fb-8fd3-75b7f15c142b/public_url
+Sólido entendimiento y habilidades en análisis de productos para el desarrollo de software
 
-8) Pendo Super Certified
-https://www.credly.com/badges/624c8ea5-a44d-4462-8f1a-b366d6ef2d82/public_url
-
-9) Postman API Fundamentals Expert
-https://api.badgr.io/public/assertions/spufydjkR1OMX9xqwunuAw
-
-10) British Council Changing and Growing a Business
+5) British Council Changing and Growing a Business
 [Changing and growing a business - Level C1 - 36h • Jorge Cordova Juillerat • English Online - British Council](https://credentials.englishonline.britishcouncil.org/1aa3cd04-48eb-4b6f-9782-c64141b611d0#gs.db5jji)
+Competencia de ingles Nivel C1 segun MCER, alto nivel de competencias lingüísticas para comprender y aplicar.
+
+6) Pendo Digital Adoption Certification
+https://www.credly.com/badges/7307ddf3-2ae9-4f6f-8ea1-8062a25f0752/public_url
+Competencias para implementar estrategias de adopción digital exitosas dentro de una organización.
+
+7) Business Intelligence Foundation Professional Certification - BIFPC™
+https://www.credly.com/badges/0410849e-e16d-42e9-8c98-4bb305980d33/public_url
+Conocimiento de BI, proceso de implementación, arquitectura y análisis
+
+8) Lean Six Sigma White Belt Professional Certification - LSSWBPC
+https://www.credly.com/badges/9e6ffd8c-f0f2-4646-852f-6fc360ff688d/public_url
+Compentencias en principios y herramientas de Lean Six Sigma y mejora continua
+conceptos clave , una metodología enfocada en eliminar el desperdicio y mejorar la calidad en los procesos de negocio
+
+9) Pendo Super Certified
+https://www.credly.com/badges/624c8ea5-a44d-4462-8f1a-b366d6ef2d82/public_url
+ profundo conocimiento y dominio de las funcionalidades y capacidades de la plataforma Pendo
+
+10) LLL Lifelong Learning
+https://www.credly.com/badges/2561c8d2-7441-4d8a-a1fb-b69cff605785/public_url
+econocimiento a la capacidad de una persona para aprender de forma autónoma y continua,
 
 11) British Council Yesterday, today and tomorrow
-
+[Yesterday, today and tomorrow - Level C1 - 36h • Jorge Cordova Juillerat • English Online - British Council](https://credentials.englishonline.britishcouncil.org/12e2baa4-d493-4af4-9307-1e5e36c662a4#gs.db5opb)
+Alta competencia lingüística en Ingles Nivel C1 segun MCER
+Competencia de ingles Nivel C1 segun MCER, alto nivel de competencias lingüísticas para comprender y aplicar.
 
 12) British Council People and Events
 [People and events - Level C1 - 36h • Jorge Cordova Juillerat • English Online - British Council](https://credentials.englishonline.britishcouncil.org/34974c41-b3b1-4f2f-ab9b-f28602ffac56#gs.db5kos)
+Alta competencia lingüística en Ingles Nivel C1 segun MCER
+Competencia de ingles Nivel C1 segun MCER, alto nivel de competencias lingüísticas para comprender y aplicar.
 
 13) British Council Product Research & Development
+[Product research and development - Level C1 - 36h • Jorge Cordova Juillerat • English Online - British Council](https://credentials.englishonline.britishcouncil.org/8e9267fd-f0fd-45dc-921f-885a340b67f4#gs.db5lsf)
+Alta competencia lingüística en Ingles Nivel C1 segun MCER
+Competencia de ingles Nivel C1 segun MCER, alto nivel de competencias lingüísticas para comprender y aplicar.
 
+14) British Council Recreation and relaxation
+[Recreation and relaxation - Level C1 - 36h • Jorge Cordova Juillerat • English Online - British Council](https://credentials.englishonline.britishcouncil.org/285b181e-841c-4168-a6d5-29fa269bf828#gs.db5m9n)
+Alta competencia lingüística en Ingles Nivel C1 segun MCER
+Competencia de ingles Nivel C1 segun MCER, alto nivel de competencias lingüísticas para comprender y aplicar.
 
-14) British Council 
-
-
+15) Imagen en preparacion
+https://via.placeholder.com/150x250?text=Imagen+en+preparación
+Tarjeta en preparacion.
