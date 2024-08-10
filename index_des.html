@@ -10,15 +10,15 @@
 
     <!--Por buena práctica, se cargan primero las librerías externas como Bootstrap o Animate-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-            crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/js/fancybox/jquery.fancybox.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        type="text/css" media="screen">
 
     <!--Segundo, se cargan estilos generales como font-awesome, style.css-->
     <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css">
@@ -28,9 +28,9 @@
 
     <!--Cuarto, se cargan los scripts para evitar problemas de dependencias-->
     <script>
-        $( function() {
-          $( "#dialog" ).dialog();
-        } );
+        $(function () {
+            $("#dialog").dialog();
+        });
     </script>
     <!--Función detecta(): Verifica el lenguaje del entorno y, por defecto muestra página-->
     <!--en español, si detecta que es inglés, muestra una versión en inglés, en otro caso-->
@@ -69,7 +69,7 @@
         </div>
     </header>
                 -->
-    
+
     <!-- Prueba menu 2
     <header class="header">
         
@@ -107,7 +107,7 @@
                         -->
 
 
-<!--<body class="bg-secondary">-->
+    <!--<body class="bg-secondary">-->
 
     <!-- Inicio del menu -->
 
@@ -195,7 +195,7 @@
     </nav>
     <!-- Fin sección MENU responsive -->
 
-    <!--Prueba switch de fondo light, dark-->
+    <!--Switch de fondo light, dark-->
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol id="check2" viewBox="0 0 16 16">
             <path
@@ -215,7 +215,7 @@
                 d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
         </symbol>
     </svg>
-    
+
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
         <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
             aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
@@ -264,48 +264,52 @@
         </ul>
     </div>
     <!--Fin prueba switch de fondo-->
-    
-<!--===== HOME =====-->
-<section class="home" id="home">
-    <div class="home__container bd-grid">
-        <h1 class="home__title"><span>HE</span><br>LLO.</h1>
-        <div class="home__scroll">
-            <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+
+    <!--===== HOME =====-->
+    <section class="home" id="home">
+        <div class="home__container bd-grid">
+            <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
+            </div>
+            <img src="./assets/imgs/perfil.jpg" alt="" class="home__img">
         </div>
-        <img src="./assets/imgs/perfil.jpg" alt="" class="home__img">
-    </div>
-</section>
+    </section>
 
 
-<!--===== ABOUT =====-->
-<section class="about section" id="about">
-    <h2 class="section-title">About</h2>
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
 
-    <div class="about__container bd-grid">
-        <div class="about__img">
-            <img src="assets/img/perfil.png" alt="">
-        </div>
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="assets/img/perfil.png" alt="">
+            </div>
 
-        <div>
-            <h2 class="about__subtitle">I'am Jhon Doe</h2>
-            <span class="about__profession">Web designer</span>
-            <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
+            <div>
+                <h2 class="about__subtitle">I'am Jhon Doe</h2>
+                <span class="about__profession">Web designer</span>
+                <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur,
+                    architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
 
-            <div class="about__social">
-                <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                <div class="about__social">
+                    <a href="#" class="about__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" class="about__social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="#" class="about__social-icon"><i class='bx bxl-dribbble'></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!--<hr class="featurette-divider">-->
     <div class="featurette" id="contact">
         <img class="featurette-image img-circle img-responsive pull-right" src="./assets/imgs/photo-1.jpg">
         <h2 class="featurette-heading">The Third Heading <span class="text-muted">Will Seal the Deal.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+            semper.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        </p>
     </div>
 
     <main class="container py-5">
@@ -377,21 +381,23 @@
                             This is the first column.</p>
                         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
                     </div>
-        
+
                     <div class="col-lg-4">
-                        <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" alt="Miniatura" class="rounded-circle" width="140" height="140">
-                            <title>Placeholder</title>
+                        <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" alt="Miniatura"
+                            class="rounded-circle" width="140" height="140">
+                        <title>Placeholder</title>
                         <h3>Heading</h3>
                         <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
                             second column.</p>
                         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
                     </div>
-        
+
                     <div class="card-container">
                         <div class="card">
                             <!--<img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" alt="Imagen de ejemplo"
                                 class="card-img">-->
-                            <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" alt="Miniatura" class="rounded-circle" width="140" height="140">    
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" alt="Miniatura"
+                                class="rounded-circle" width="140" height="140">
                             <div class="card-body">
                                 <h5 class="card-title">Título de la tarjeta</h5>
                                 <p class="card-text">Descripción de la tarjeta</p>
@@ -512,15 +518,15 @@
             <h2 class="col-12 mb-4">Hitos</h2>
             <div class="box">
                 <span class="item">
-                  <img src="./assets/imgs/articulo-1.PNG" width="64" height="45" alt="Dino Sammy">
+                    <img src="./assets/imgs/articulo-1.PNG" width="64" height="45" alt="Dino Sammy">
                 </span>
                 <span class="item">
-                  <img src="/images/steampunk.svg" width="64" height="45" alt="Steampunk Sammy">
+                    <img src="/images/steampunk.svg" width="64" height="45" alt="Steampunk Sammy">
                 </span>
                 <span class="item">
-                  <img src="/images/skeleton.svg" width="64" height="45" alt="Skeleton Sammy">
+                    <img src="/images/skeleton.svg" width="64" height="45" alt="Skeleton Sammy">
                 </span>
-              </div>
+            </div>
 
 
 
@@ -537,24 +543,25 @@
                                 <h2 class="news-title">Grupo Telefonica</h2>
                                 <span>Product Manager</span>
                                 <p>Febrero 1999 – Abril 2001, Santiago, Chile, Telecomunicaciones, Call Centers, SVA</p>
-                                <!--<a class="read-more" href="#">Leer Más</a>-->
-                                <a class="read-more" data-bs-toggle="modal" data-bs-target="#exampleModal">Leer Más</a>
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                <a class="read-more" data-bs-toggle="modal" data-bs-target="#miModal">Leer Más</a>
+                                <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel"
                                     aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Detalles de la Experiencia</h5>
+                                                <h5 class="modal-title" id="miModalLabel">Detalles de la Experiencia
+                                                </h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal.body">
-                                                <p>Aquí va la información detallada sobre la experiencia, como por ejemplo:
-                                                    <ul>
-                                                        <li>Logros alcanzados</li>
-                                                        <li>Tecnologías utilizadas</li>
-                                                        <li>Responsabilidades</li>
-                                                    </ul>
+                                                <p>Aquí va la información detallada sobre la experiencia, como por
+                                                    ejemplo:
+                                                <ul>
+                                                    <li>Logros alcanzados</li>
+                                                    <li>Tecnologías utilizadas</li>
+                                                    <li>Responsabilidades</li>
+                                                </ul>
                                                 </p>
                                             </div>
                                             <div class="modal-footer">
@@ -569,22 +576,25 @@
                                 <div class="news-content">
                                     <h2 class="news-title">Entel</h2>
                                     <span>IT Manager</span>
-                                    <p>Mayo 2001 – Agosto 2005 Santiago, Chile, Telecomunicaciones, Datacenters, Integración</p>
+                                    <p>Mayo 2001 – Agosto 2005 Santiago, Chile, Telecomunicaciones, Datacenters,
+                                        Integración
+                                    </p>
                                     <a class="read-more" href="#">Leer Más</a>
                                 </div>
                             </div>
                         </div>
-        
+
                         <div class="row">
                             <div class="col-sm-6 news-item">
                                 <div class="news-content">
                                     <h2 class="news-title">Indra Systems</h2>
                                     <span>Gerente Fábrica de Software</span>
-                                    <p>agosto 2005 – Agosto 2007 Santiago, Chile, Desarrollo multiplataforma, SAP, APM</p>
+                                    <p>agosto 2005 – Agosto 2007 Santiago, Chile, Desarrollo multiplataforma, SAP, APM
+                                    </p>
                                     <a class="read-more" href="#">Leer Más</a>
                                 </div>
                             </div>
-        
+
                             <div class="col-sm-6 news-item right">
                                 <div class="news-content">
                                     <h2 class="news-title">Global Solutions</h2>
@@ -594,7 +604,7 @@
                                     <a class="read-more" href="#">Leer Más</a>
                                 </div>
                             </div>
-        
+
                             <div class="row">
                                 <div class="col-sm-6 news-item">
                                     <div class="news-content">
@@ -605,29 +615,31 @@
                                         <a class="read-more" href="#">Read More</a>
                                     </div>
                                 </div>
-        
+
                                 <div class="col-sm-6 news-item right">
                                     <div class="news-content">
                                         <h2 class="news-title">Two Fun Two Me</h2>
                                         <span>Director de Tecnología y Operaciones - Centroamérica</span>
-                                        <p>Noviembre 2017 – Octubre 2018 Santiago, Chile, Servicios de Valor Agregado para
+                                        <p>Noviembre 2017 – Octubre 2018 Santiago, Chile, Servicios de Valor Agregado
+                                            para
                                             Telcos</p>
                                         <a class="read-more" href="#">Leer más</a>
                                     </div>
                                 </div>
                             </div>
-        
+
                             <div class="row">
                                 <div class="col-sm-6 news-item">
                                     <div class="news-content">
                                         <h2 class="news-title">S&OPS Latam</h2>
                                         <span>Director</span>
-                                        <p>Octubre 2018 – Noviembre 2023 Santiago, Chile. Projects in crisis interventor.
+                                        <p>Octubre 2018 – Noviembre 2023 Santiago, Chile. Projects in crisis
+                                            interventor.
                                         </p>
                                         <a class="read-more" href="#">Leer más</a>
                                     </div>
                                 </div>
-        
+
                                 <div class="col-sm-6 news-item right">
                                     <div class="news-content">
                                         <h2 class="news-title">SRT</h2>
@@ -645,18 +657,23 @@
         <section id="contacto" class="row mt-5 mb-5">
             <h2 class="col-12 mb-4">Contacto</h2>
             <div class="container mt-5">
-                <form action="https://formsubmit.co/jorge.cordovaj@gmail.com" method="POST"> <!-- se eliminó id="contactForm" -->
+                <form action="https://formsubmit.co/jorge.cordovaj@gmail.com" method="POST">
+                    <!-- se eliminó id="contactForm" -->
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required placeholder="Nombre*" maxlength="50">
+                        <input type="text" class="form-control" id="nombre" required placeholder="Nombre*"
+                            maxlength="50">
                     </div>
                     <div class="form-group">
                         <label for="apellido">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" required placeholder="Apellido*"required maxlength="50">
+                        <input type="text" class="form-control" id="apellido" required placeholder="Apellido*" required
+                            maxlength="50">
                     </div>
                     <div class="form-group">
                         <label for="telefono">Teléfono Celular</label>
-                        <input type="text" class="form-control" id="telefono" required placeholder="Ingrese un número celular de la forma +56 9 12345678*" required pattern="\+\d{2} \d \d{8}">
+                        <input type="text" class="form-control" id="telefono" required
+                            placeholder="Ingrese un número celular de la forma +56 9 12345678*" required
+                            pattern="\+\d{2} \d \d{8}">
                     </div>
                     <div class="form-group">
                         <label for="tipoRequerimiento">Tipo de Requerimiento</label>
@@ -668,7 +685,9 @@
                     </div>
                     <div class="form-group">
                         <label for="mensaje">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="3" required placeholder="Su mensaje no debe exceder los 1000 caracteres*"required maxlength="1000"></textarea>
+                        <textarea class="form-control" id="mensaje" rows="3" required
+                            placeholder="Su mensaje no debe exceder los 1000 caracteres*" required
+                            maxlength="1000"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="correo">Dirección de Correo</label>
@@ -690,14 +709,21 @@
     </footer>
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-Wp6YV8QzClxHqAkbYLQRSzajWTHaBVvTqSewjEYHHTI=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-Wp6YV8QzClxHqAkbYLQRSzajWTHaBVvTqSewjEYHHTI=" crossorigin="anonymous"></script>
+
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
     <script>$('#exampleModal').on('hidden.bs.modal', function (event) {
-        // Aquí puedes agregar código a ejecutar cuando se cierra el modal
-        console.log('Modal cerrado');
-      });</script>
-      
+            // Aquí puedes agregar código a ejecutar cuando se cierra el modal
+            console.log('Modal cerrado');
+        });</script>
+
 
 
     <!--<script src="assets/js/detecta.js"></script> Llama función que detecta lenguaje y carga página esp o ing
